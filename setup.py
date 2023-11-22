@@ -22,7 +22,8 @@ setup(
     },
     license='MIT',
     python_requires=">=3.9",
-    packages=find_packages(include=['lruun', 'lruun.*']),
+    packages=find_packages(where="src", exclude=("tests")),
+    package_dir={"": "src"},
     install_requires=reqs,
     classifiers=[
         "Development Status :: 3 - Alpha",

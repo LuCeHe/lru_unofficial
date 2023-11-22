@@ -12,9 +12,10 @@ However custom implementations exist, such as [this one](https://github.com/i404
 
 We implement the LRU unit and also the final LRU residual block used in the paper. For both
 we provide a recurrent form and a scan form. In our tests, the scan form was up to 300x faster
-than the recurrent form on a GPU, giving the same output. You can import them as follows:
+than the recurrent form on a GPU, giving the same output. You can install the package with
+`pip instal lruun`. After that, you can import the layers as follows:
 
 ```python
-from lru_unofficial.tf.linear_recurrent_unit import LinearRecurrentUnitCell, LinearRecurrentUnitFFN
-from lru_unofficial.tf.linear_recurrent_unit import ResLRUCell, ResLRUFFN
+from lruun.tf import LinearRecurrentUnitCell, LinearRecurrentUnitFFN
+from lruun.tf import ResLRUCell, ResLRUFFN
 ```
