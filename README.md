@@ -15,6 +15,6 @@ we provide a recurrent form and a scan form. In our tests, the scan form was up 
 than the recurrent form on a GPU, giving the same output. You can import them as follows:
 
 ```python
-from lru_unofficial.src.lru_unofficial.tf.linear_recurrent_unit import LinearRecurrentUnitCell, LinearRecurrentUnitFFN
-from lru_unofficial.src.lru_unofficial.tf.linear_recurrent_unit import ResLRUCell, ResLRUFFN
+from lru_unofficial.tf.linear_recurrent_unit import LinearRecurrentUnitCell, LinearRecurrentUnitFFN
+from lru_unofficial.tf.linear_recurrent_unit import ResLRUCell, ResLRUFFN
 ```
