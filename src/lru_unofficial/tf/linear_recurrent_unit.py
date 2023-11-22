@@ -7,7 +7,7 @@ import tensorflow_probability as tfp
 
 from keras.initializers.initializers_v2 import VarianceScaling
 
-from lru_unofficial.tf.geglu import GEGLU
+from lru_unofficial.src.lru_unofficial.tf.geglu import GEGLU
 
 
 # Parallel scan operations

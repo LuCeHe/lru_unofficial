@@ -1,7 +1,7 @@
 import tensorflow as tf
 import tensorflow_probability as tfp
 
-from lru_unofficial.tf.linear_recurrent_unit import LinearRecurrentUnitCell, ResLRUCell, LinearRecurrentUnitFFN, \
+from lru_unofficial.src.lru_unofficial.tf.linear_recurrent_unit import LinearRecurrentUnitCell, ResLRUCell, LinearRecurrentUnitFFN, \
     ResLRUFFN, binary_operator_diag
 
 
