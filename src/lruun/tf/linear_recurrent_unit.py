@@ -182,7 +182,8 @@ class ResLRUCell(tf.keras.layers.Layer):
 
         new_input_shape = input_shape[:-1] + (self.num_neurons,)
         self.lru.build(new_input_shape)
-        self.norm.build(new_input_shape)
+        if hasattr(self.norm, 'build'):
+            self.norm.build(new_input_shape)
         self.glu.build(new_input_shape)
         self.glu.w_1.build(new_input_shape)
         self.glu.w_3.build(new_input_shape)
